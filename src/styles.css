@@ -1,0 +1,79 @@
+.container{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#fadd06, #e4d20b);
+}
+
+.title{
+    font-size: 100px;
+    color: rgb(211, 12, 168);
+    animation: flipTitle 2s;
+
+
+}
+
+@keyframes fLipTitle {
+    from{
+transform: rotate(90deg);
+    }
+    to{
+        transform: rotatex(0deg);
+
+    }
+
+}
+
+.containerInput{
+    background-color: rgb(210, 7, 216);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0,5);
+}
+.containerInput input{
+background-color: palevioletred;
+border:0;
+font-size: 20px;
+color: rgb(255, 255, 255);
+outline: none;
+margin-right: 8px;
+}
+.buttonSearch{
+    background-color: blueviolet;
+    border:0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.buttonSearch:haver{
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    width: 500px;
+    border-radius: 8px;
+
+}
+.main h2{
+    margin: 16px 0;
+    font-weight: bold;
+}
+@media(max-with: 620px){
+    .title{
+        font-size: 60px;
+    }
+    .main:80%;
+    min-height: 250px;
+}
